@@ -3,8 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>SuperForm</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
-    
+    <div class="row">
+      <div class="small-12 large-12 columns">
+        <h2>The Weirdest Form There Ever Was</h2>
+      </div>
+    </div>
+
+    <form class="" action="index.html" method="post">
+      <div class="row">
+        <div class="small-12 large-6 columns"><label for="favorite-number">What's my favorite number?</label>
+          <input type="text" name="favorite-number" value="" required>
+        </div>
+        <div class="small-12 large-6 columns">
+          <label for="favorite-amphibian">What's my favorite amphibian?</label>
+          <select class="full-width" name="favorite-amphibian" required>
+            <option disabled selected value></option>
+            <option value="newt">Blue-tailed Fire-bellied Newt</option>
+            <option value="frogs">Frogs</option>
+            <option value="salamander">Marbled Salamander</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <label for="favorite-color">What's my favorite color?</label>
+          <input type="color" name="favorite-color" value="#ffa07a" required>
+        </div>
+        <div class="small-12 large-6 columns">
+          <label for="bday">What's my birthday?</label>
+          <input type="date" name="bday" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-4 large-offset-4 columns">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+      <div class="small-12 large-12 columns">
+        <p>For your text field, nothing else except a value of 5 will be accepted.</p>
+        <p>For your select field, nothing else except a value of "frogs" will be accepted.</p>
+        <p>use CSS to style the contents</p>
+        <p>use at least one media query (that you write yourself)</p>
+      </div>
+    </div>
+
   </body>
 </html>
